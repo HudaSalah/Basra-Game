@@ -1,0 +1,53 @@
+<!DOCTYPE>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> <!--for html 4.01 -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--  34an IE -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- responsive -->
+    
+<link href="https://fonts.googleapis.com/css?family=Amita|Berkshire+Swash|Lobster|Pacifico" rel="stylesheet">
+    
+<link rel="stylesheet" href="css/style.css"/>
+    
+<title>Splash Screen</title>
+   
+</head>
+
+<body>
+
+    <div class="Container-Splash">
+     <div class="content">
+         <audio src="src/play-game.mp3" autoplay loop ></audio>
+       <h1> Hello In Card Game</h1>
+        <p>PLease Enter Your Name Here: </p>
+        <input type="text" placeholder="Name Goes Here..." id="name"/>
+        <a href="index.html">
+            <button id="start" onclick="getName()"><a href="index.html"> Start Game </a></button>
+         </a>
+    </div>
+        <h2><span>Made By :</span>HuDa SaLaH</h2>
+    </div>
+
+    <script src="js/jquery-3.1.1.js" ></script>
+    <script type="text/javascript">
+     
+        
+        function getName()
+        {
+           var Name = $("#name").val().substring(0,8);
+            localStorage.setItem("storageName",Name);
+            console.log(Name); 
+            return Name;
+        }
+        
+
+        
+        $("a").on("click",function()
+                 {
+             getName();
+        });
+
+    </script>
+</body>
+    
+</html>

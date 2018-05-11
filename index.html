@@ -1,0 +1,85 @@
+<!DOCTYPE>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!--for html 4.01 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!--  34an IE -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- responsive -->
+	<link rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script src="ndeef.js"></script>
+	<title>Project Pasra</title>
+</head>
+
+<body>
+	<!--    <script type="text/javascript" src="Basra.js"></script>-->
+	<div class="container">
+		<!-- /******************************** first column ****************************/-->
+		<div class="AllCards">
+			<img id="PlayersCards" src="img/back3.jpg" name="allCards" alt="AllCards" />
+			<!--            <button id="StartGame">Distribute ON Deck</button>-->
+			<audio type="audio/mp3" autoplay></audio>
+			<a href="index1.html">
+				<button id="PlayAgain">Play Again</button>
+			</a>
+		</div>
+		<!--        /******************************** 2sec column ****************************/-->
+		<div class="ParentDeck">
+			<div class="PlayerCards">
+				<!-- <div class="Card1"></div>-->
+				<audio autoplay></audio>
+			</div>
+			<div class="DeckCards">
+				<button id="StartGame">Start Game</button>
+				<!-- <div  class="Card2" value=" " ondrop="Drop(event)" ondragover="allowDrop(event)"></div>--></div>
+			<div class="HudaCards">
+				<audio autoplay></audio>
+				<!-- <div id="paper1" class="Card3" draggable="true" ondragstart="OnDragStart(event)"></div>--></div>
+		</div>
+		<!--        /******************************** 3th column ****************************/     -->
+		<div class="ParentWinCards">
+			<div class="PlayerWinCards">
+				<p>Player:<span>????</span>
+				</p>
+				<p>Score:<span>0</span>
+				</p>
+				<p>BASRA:<span>0</span>
+				</p>
+			</div>
+			<div class="Round-Turn">
+				<div class="RoundNum">
+					<p>ROUND:<span>number</span>
+					</p>
+					<p>TURN:<span>0</span>
+					</p>
+				</div>
+			</div>
+			<div class="Player2WinCards">
+				<p>Player:<span>????</span>
+				</p>
+				<p>Score:<span>0</span>
+				</p>
+				<p>BASRA:<span>0</span>
+				</p>
+			</div>
+		</div>
+		<!--        /******************************** winner div ****************************/-->
+		<div class="TheWinner">
+			<div class="classFlex">
+				<h2></h2>
+				<h3></h3>
+				<p></p>
+				<a href="index1.html">
+					<button id="PlayAgain2">Play Again</button>
+				</a>
+				<audio autoplay></audio>
+			</div>
+		</div>
+	</div>
+	
+</body>
+
+</html>
